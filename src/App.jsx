@@ -7,7 +7,6 @@ import CompletedPage from "./pages/CompletedPage.jsx";
 import ProgressPage from "./pages/ProgressPage.jsx";
 import CreatePage from "./pages/CreatePage.jsx";
 import NewPage from "./pages/NewPage.jsx";
-import NotFoundPage from "./pages/NotFoundPage.jsx";
 import ProfilePage from "./pages/ProfilePage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import RegistrationPage from "./pages/RegistrationPage.jsx";
@@ -31,7 +30,6 @@ const App = () => {
                             <Route path="/login" element={<LoginPage/>}/>
                             <Route path="/registration" element={<RegistrationPage/>}/>
                             <Route path="/forgetpass" element={<ForgetPassPage/>}/>
-                            <Route path="*" element={<NotFoundPage/>}/>
                         </Routes>
                     </BrowserRouter>
                     <Toaster/>
@@ -46,7 +44,6 @@ const App = () => {
                             <Route path="/login" element={<LoginPage/>}/>
                             <Route path="/registration" element={<RegistrationPage/>}/>
                             <Route path="/forgetpass" element={<ForgetPassPage/>}/>
-                            <Route path="*" element={<NotFoundPage/>}/>
                         </Routes>
                     </BrowserRouter>
                     <Toaster/>
