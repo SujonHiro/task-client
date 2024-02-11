@@ -20,16 +20,17 @@ const App = () => {
                 <>
                     <BrowserRouter>
                         <Routes>
-                            <Route path="/" element={<DashboardPage/>}/>
+                            <Route path="/dashboard" element={<DashboardPage/>}/>
                             <Route path="/canceled" element={<CanceledPage/>}/>
                             <Route path="/completed" element={<CompletedPage/>}/>
                             <Route path="/progress" element={<ProgressPage/>}/>
                             <Route path="/create" element={<CreatePage/>}/>
                             <Route path="/all" element={<NewPage/>}/>
                             <Route path="/profile" element={<ProfilePage/>}/>
-                            <Route path="/login" element={<LoginPage/>}/>
-                            <Route path="/registration" element={<RegistrationPage/>}/>
                             <Route path="/forgetpass" element={<ForgetPassPage/>}/>
+                            {/*<Route path="/" element={<LoginPage/>}/>*/}
+                            {/*<Route path="/registration" element={<RegistrationPage/>}/>
+                            */}
                         </Routes>
                     </BrowserRouter>
                     <Toaster/>
@@ -41,7 +42,7 @@ const App = () => {
                 <>
                     <BrowserRouter>
                         <Routes>
-                            <Route path="/login" element={<LoginPage/>}/>
+                            <Route path="/" element={<LoginPage/>}/>
                             <Route path="/registration" element={<RegistrationPage/>}/>
                             <Route path="/forgetpass" element={<ForgetPassPage/>}/>
                         </Routes>

@@ -32,7 +32,7 @@ const Registration = () => {
         }else{
             registrationApi(firstName,lastName,email,mobile,password,photo).then((result)=>{
                 if(result===true){
-                    navigate('/login');
+                    navigate('/');
                 }
             })
         }
@@ -52,7 +52,7 @@ const Registration = () => {
                                 <input ref={(input)=> passwordRef = input} type="password" className="form-control animated fadeInUp mb-3" placeholder="Password"/>
                                 <button onClick={registerBtn} className="btn btn-purple w-100 animated fadeInUp">Sign Up</button>
                                 <div className="text-center w-100 mt-4">
-                                    <Link to="/login" className="text-center text-muted ms-3  animated fadeInUp">Sign In</Link>
+                                    <Link to="/" className="text-center text-muted ms-3  animated fadeInUp">Sign In</Link>
                                     <br/>
                                     <Link to="/forgetpass" className="text-center ms-3 text-muted animated fadeInUp">Forget Password</Link>
                                 </div>

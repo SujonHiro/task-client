@@ -47,7 +47,7 @@ const Profile = () => {
         }else{
             profileUpdateApi(firstName,lastName,email,mobile,password,photo).then((result)=>{
                 if (result===true){
-                    navigate("/")
+                    navigate("/dashboard")
                 }
             })
         }
